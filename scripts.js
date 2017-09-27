@@ -1,3 +1,12 @@
-alert("I am a file");
+let tipCalculator;
+tipCalculator = function(total, tipRate){
+  let tipAmount;
+  if(tipRate < 1){
+    tipAmount = tipRate * total;
+  }else{
+    tipAmount = tipRate * total * .01;
+  }
+  $("#response").html("Your tip is $" + tipAmount);
+  };
 
-// comment
+tipCalculator(100.00,30);
