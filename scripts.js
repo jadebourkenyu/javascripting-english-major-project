@@ -1,12 +1,4 @@
-let tipCalculator;
-tipCalculator = function(total, tipRate){
-  let tipAmount;
-  if(tipRate < 1){
-    tipAmount = tipRate * total;
-  }else{
-    tipAmount = tipRate * total * .01;
-  }
-  $("#response").html("Your tip is $" + tipAmount);
-  };
-
-tipCalculator(100.00,30);
+var numbers = [1,2,3]
+var doubles = nmbers.map(function(x){
+  return x*2;
+})
