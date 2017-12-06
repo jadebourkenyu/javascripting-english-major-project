@@ -10,12 +10,16 @@ let md;
 md = window.markdownit({html: true}).use(window.markdownitFootnote);
 // Load the Markdown file with jQuery.
 $.ajax({
-  url: "hastings-street.md",
-  success: function(markdown){
-    // Convert the Markdown to HTML.
+  url: "poem.md",
+  success: function(poem){
     let html;
-    html = md.render(markdown);
-    // Print the HTML to #content using jQuery.
-    $("#content").html(html);
+    html = md.render(poem);
+    $("#poem").html(html);
+    // The above is the same as the $.ajax() call in the prev. ch.
+    $("#poem").html(function(_, oldHtml){
+      let newHtml;
+      newHtml = oldHtml.replace(/Hastings Street/g, "<a href='#' data-place='hastings-street'>Hastings Street</a>");
+      return newHtml;
+    });
   }
 });
