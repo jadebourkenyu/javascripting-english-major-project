@@ -1,9 +1,10 @@
 p {
-  color: #657b83;
-    background-color: #fdf6e3;
+  color: #473C3D;
+  font:20px didot, serif;
+
 }
 .second-paragraph {
-  color: purple;
+  color:;
 }
 #third-paragraph {
   color: #d33682;
@@ -14,5 +15,33 @@ p {
 }
 
 #final-map {
-  height: 300px;
+  height: 400px;
+}
+h2 {
+  color: #7A0C0C;
+    background-color: #FED4DA;
+  font: 42px courier;
+}
+h1 {
+  color: #6036EE;
+    background-color: #FFEF8C;
+  font: 60px Georgia, serif;
+}
+h3 {
+  color:#BF560F;
+  font: 32px Times;
+}
+p2 {
+  color: #FF6632;
+  font: 17px Times;
+}
+h4 {
+  color: #7A0C0C;
+  background-color: #FED4DA;
+  font: 42px courier;
+}
+h5 {
+  color: #6036EE;
+  background-color: #FEFFDA;
+  font: 18px Georgia, serif;
 }
